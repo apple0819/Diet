@@ -5,20 +5,16 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 
-import com.example.diet.databinding.ActivityMainBinding;
+import com.example.diet.databinding.ActivitySignUpBinding;
 
-public class MainActivity extends BaseActivity {
+public class SignUpActivity extends BaseActivity {
 
-    ActivityMainBinding binding = null;
+    ActivitySignUpBinding binding = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-
-        setupEvents();
-        setValues();
-
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_sign_up);
     }
 
     @Override
